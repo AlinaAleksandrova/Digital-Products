@@ -1,0 +1,151 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js") 
+        script(src="../js/owl.carousel.min.js") 
+        script(src="../js/script.js") 
+        link(rel='stylesheet' href='../build/styles/normalize.css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+        link(rel='stylesheet' href='../fonts/stylesheet.css')
+        link(rel='stylesheet' href='../build/styles/owl.carousel.min.css')
+        link(rel='stylesheet' href='../build/styles/owl.theme.default.min.css')
+        link(rel='stylesheet' href='../build/styles/style.css')
+        title Landing page
+    body
+        header.header
+            section.section-menu
+                nav.menu
+                    input.menu-btn#menu-btn(type="checkbox")
+                    label.menu-icon(for="menu-btn")
+                        span.navicon
+                    ul.menu_list
+                        each name in ['Services', 'Ventures', 'People', 'Blog']
+                            li
+                                a.text-20px(href="#")= name
+                a.link(href="/") JOIN US
+            section.header-text
+                .wrapper-text
+                    h1 This is where digital products and ventures go further
+                    div.wrapper-img-text
+                        img#scroll(src="../images/bottom.png", alt="bottom")
+                        p.text-20px Welcome to the place where meaningful ideas are nurtured, transformed and launched.
+        main
+            section.firth-section.padding-r-l#firth-section
+                .wrapper-title
+                    h2 If you <span>think
+                    h2 <span>better,</span> we're <span>here to help</span>
+                .wrapper-info
+                    .left
+                        p.description Here you’ll find people ready to create digital products that matter. The quality and the impact of the products are above anything else.
+                        p.description That’s why we’re called Subvisual, because we build details that others don’t.
+                        p.description Thinking about your project was the first step. The next one is writing to us. 
+                            a(href="/") Let’s talk now. 
+                    .right
+                        img(src="../images/image1.png", alt="image")
+                .wrapper-img
+                    img(src="../images/image2.png", alt="image")
+                    img(src="../images/image3.png", alt="image")
+            section.second-section.padding-r-l
+                .wrapper
+                    .left
+                        p.description What our clients say
+                    .right
+                        p.description Utrust
+                        #slider.owl-carousel.owl-theme
+                            .slide
+                                p.dark-text-28px Subvisual’s team was crucial to our success as they were with us since the company's inception. Together with the Founders, they were tireless and helped us through every step not only with the expertise that guided us throughout the journey, but also by actually providing a team to build the product with us.
+                                p.description Sanja Kon - CEO
+                            .slide
+                                p.dark-text-28px Subvisual’s team was crucial to our success as they were with us since the company's inception. Together with the Founders, they were tireless and helped us through every step not only with the expertise that guided us throughout the journey, but also by actually providing a team to build the product with us. 
+                                p.description Sanja Kon - CEO
+                            .slide
+                                p.dark-text-28px Subvisual’s team was crucial to our success as they were with us since the company's inception. Together with the Founders, they were tireless and helped us through every step not only with the expertise that guided us throughout the journey, but also by actually providing a team to build the product with us.
+                                p.description Sanja Kon - CEO
+            section.third-section.padding-r-l
+                .wrapper-flex-1
+                    .left
+                        .wrapper-title
+                            h2 One step at a <span>time</span> every step of the way
+                    .right
+                        p.dark-text-28px These are some examples of digital products we helped develop.
+                .wrapper-flex-2
+                    .left
+                        p.description.line Utrust
+                        p.dark-text-28px Assist in strategic thinking and product development.
+                        p.dark-text-20px Subvisual joined Utrust as part of their team to help them define a strategy and build a product that was stable to go to market. From ideation to strategy through development, Subvisual was there to support decisions and provide experience-based knowledge.
+                    .right
+                        img(src="../images/image4.png", alt="image")
+                .wrapper-flex-2
+                    .left
+                        img(src="../images/image5.png", alt="image")
+                    .right
+                        p.description.line Coverflex
+                        p.dark-text-28px A quick turnaround for a insurtech solution
+                        p.dark-text-20px Coverflex reached out to Subvisual in need of a team of experts that would be able to help them deliver their solution in a quick yet reliable manner. In the end, our team understood them immediately and was to help them build an MVP and website in time for an important presentation.
+                .wrapper-link
+                    a(href="/") Check our services 
+            section.fourth-section
+                .wrapper
+                    .wrapper-text
+                        .wrapper-title-white
+                            h2 A <span>love</span> affair between <span>innovation</span> and <span>technology</span>
+                        p.text-20px We’re not only about products. We’re also a venture studio. It’s here where innovation and technology come together to do amazing things for the people.
+                        p.text-20px See what we can do to boost your business and product.
+                    .wrapper-link
+                        a(href="/") Explore NOW
+            section.fifth-section.padding-r-l
+                .wrapper
+                    .left
+                        .wrapper-title
+                            h2 Join us in nurturing <span>ideas</span> that <span>empower</span> people
+                        p.dark-text-28px Be part of a team that brings great projects to life.
+                        p.dark-text-20px Our core focus is to build an environment where people can learn, contribute and exceed while exploring this new web3 world.
+                    .right
+                        img(src="../images/image6.png", alt="image")
+                .wrapper-link
+                        a(href="/") join us
+                p.description.line Visit OUR BLOG
+                .wrapper-blog
+                    .blog 
+                        p.dark-text-28px Adding Netlify CMS to a website built with Still outside of Netlify 
+                        a(href="/") Read more 
+                    .blog 
+                        p.dark-text-28px SubMonthly #7 - How Content Shapes A Team
+                        a(href="/") Read more 
+                    .blog 
+                        p.dark-text-28px What A Journey It Has Been
+                        a(href="/") Read more 
+            section.sixth-section.padding-r-l
+                h2.title Ready to take the next step?
+                .wrapper-link
+                    a(href="/") LET'S TALK
+        footer.footer.padding-r-l
+            .wrapper
+                .left
+                    h4.blue-text-28px Go to
+                    nav.menu
+                        ul.menu_list
+                            each name in ['Services', 'Ventures', 'People', 'Blog', 'Jobs / Careers']
+                                li
+                                    a.dark-text-20px(href="#")= name
+                .right
+                    h4.blue-text-28px We're social
+                    .wrapper-social
+                        a.dark-text-20px(href="/") Md
+                        a.dark-text-20px(href="/") Be
+                        a.dark-text-20px(href="/") Git 
+                        a.dark-text-20px(href="/") Dri
+                        a.dark-text-20px(href="/") In
+                        a.dark-text-20px(href="/") Fb
+                        a.dark-text-20px(href="/") Tw
+                        a.dark-text-20px(href="/") Ins
+            .wrapper
+                .left
+                    h4.blue-text-28px Contact us
+                    a.dark-text-20px(href="contact@subvisual.com") contact@subvisual.com
+                .right
+                    h4.blue-text-28px Offices
+                    p.dark-text-20px Remote. Work anywhere in Europe.<br>Or join our mothership, landed in Braga, Portugal.
+            
